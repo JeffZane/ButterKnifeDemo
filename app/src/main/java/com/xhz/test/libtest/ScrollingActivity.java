@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.xhz.test.lib.TestActivity;
+import com.xhz.test.lib.CoreLibActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,7 +31,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
 //                        .setAction("Action", null).show();
-                TestActivity.startTestActivity(ScrollingActivity.this);
+                CoreLibActivity.startTestActivity(ScrollingActivity.this);
             }
         });
     }

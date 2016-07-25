@@ -8,22 +8,25 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.xhz.test.otherlib2.R;
+import com.xhz.test.otherlib2.R2;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class TestActivity extends Activity {
+public class OtherLib2Activity extends Activity {
     @BindView(R2.id.button1) Button button1;
     @BindView(R2.id.button2) Button button2;
 
     public static void startTestActivity(@NonNull Activity activity) {
-        activity.startActivity(new Intent(activity, TestActivity.class));
+        activity.startActivity(new Intent(activity, OtherLib2Activity.class));
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_other_lib2);
         ButterKnife.bind(this);
 
         button1.setOnClickListener(new View.OnClickListener() {

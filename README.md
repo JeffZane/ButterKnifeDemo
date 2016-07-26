@@ -7,7 +7,7 @@ __Library uses:__
 
 step1
 ---------
-add 「apply from: "../../ButterKnifeDemo/butterknife.gradle"」 in the gradle file.
+add butterknife.gradle to root project and add「apply from: "../../ButterKnifeDemo/butterknife.gradle"」 in your library gradle file.
 
 step2
 ---------

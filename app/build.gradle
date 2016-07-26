@@ -25,7 +25,6 @@ dependencies {
     compile 'com.jakewharton:butterknife:8.2.1'
     apt 'com.jakewharton:butterknife-compiler:8.2.1'
 
-    compile project(':CoreLib')
     compile project(':OtherLib1')
     compile project(':OtherLib2')
 

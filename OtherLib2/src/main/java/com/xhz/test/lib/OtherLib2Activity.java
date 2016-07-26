@@ -16,9 +16,8 @@ import butterknife.ButterKnife;
 
 public class OtherLib2Activity extends Activity {
     @BindView(R2.id.button1) Button button1;
-    @BindView(R2.id.button2) Button button2;
 
-    public static void startTestActivity(@NonNull Activity activity) {
+    public static void start(@NonNull Activity activity) {
         activity.startActivity(new Intent(activity, OtherLib2Activity.class));
     }
 
@@ -29,18 +28,6 @@ public class OtherLib2Activity extends Activity {
         setContentView(R.layout.activity_other_lib2);
         ButterKnife.bind(this);
 
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(), "button1", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(v.getContext(), "button2", Toast.LENGTH_SHORT).show();
-            }
-        });
+        button1.setText(String.format("当前时间：%s", CommonUtils.toExactString(System.currentTimeMillis())));
     }
 }

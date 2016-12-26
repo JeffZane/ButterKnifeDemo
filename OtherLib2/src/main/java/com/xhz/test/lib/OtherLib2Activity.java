@@ -4,9 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
-import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import com.xhz.test.otherlib2.R;
 import com.xhz.test.otherlib2.R2;
@@ -28,6 +26,6 @@ public class OtherLib2Activity extends Activity {
         setContentView(R.layout.activity_other_lib2);
         ButterKnife.bind(this);
 
-        button1.setText(String.format("当前时间：%s", CommonUtils.toExactString(System.currentTimeMillis())));
+        button1.setText(String.format("lib2:当前时间：%s", CommonUtils.toExactString(System.currentTimeMillis())));
     }
 }
